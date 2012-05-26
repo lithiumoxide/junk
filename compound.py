@@ -12,6 +12,7 @@ intr = int*0.01
 for i in range(0,yrs):
 	yearly = init+(12*month)
 	compound = yearly+(intr*yearly)
-	init = compound
+	r = round(compound,2)
+	init = r
 
-print compound
+print r
